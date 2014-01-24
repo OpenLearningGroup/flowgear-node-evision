@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RequestMappings xmlns="http://tempuri.org/RequestMappings.xsd">
+
+  <!--StockLineItem-->
+  <RequestMapping Module="StockLineItem" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/StockLineItem/Post" Description=""  />
+  <RequestMapping Module="StockLineItemMethods" Action="List" HttpMethod="Get"  UrlTemplate="{0}/StockLineItem/GetMethods" Description=""  />
+
+  <!--StockOrderResponses-->
+  <RequestMapping Module="StockOrderResponses" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/StockOrderResponses/CreateOrderResponse" Description=""  />
+  <RequestMapping Module="StockOrderResponsesMethods" Action="List" HttpMethod="Get"  UrlTemplate="{0}/StockOrderResponses/GetMethods" Description=""  />
+
+  <!--Communications-->
+  <RequestMapping Module="SendIndividualSms" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/Communications/SendIndividualSms?studentNum={studentNum}&amp;message={message}&amp;smsType={smsType}" Description=""  />
+
+  <!--FinancialApproval-->
+  <RequestMapping Module="FinancialApproval" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/FinancialApproval/Post" Description=""  />
+  <RequestMapping Module="FinancialApprovalMethods" Action="List" HttpMethod="Get"  UrlTemplate="{0}/FinancialApproval/GetMethods" Description=""  />
+
+  <!--General-->
+  <RequestMapping Module="Login" Action="Create" HttpMethod="Post" UrlTemplate="{0}/General/Login" Description=""  />
+  <RequestMapping Module="RequestAccess" Action="Get" HttpMethod="Get" UrlTemplate="{0}/General/RequestAccess?username={username}&amp;email={email}" Description=""  />
+  <RequestMapping Module="ResetPassword" Action="Get" HttpMethod="Get" UrlTemplate="{0}/General/ResetPassword?username={username}" Description=""  />
+  <RequestMapping Module="AllStudents" Action="List" HttpMethod="Get" UrlTemplate="{0}/General/AllStudents" Description=""  />
+  <RequestMapping Module="StudentRelatives" Action="Get" HttpMethod="Get" UrlTemplate="{0}/General/RelativeStudents?idNumber={idNumber}" Description=""  />
+  <RequestMapping Module="StudentRelatives" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/StudentRelatives" Description=""  />
+  <RequestMapping Module="AllStudentSecondary" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentSecondary" Description=""  />
+  <RequestMapping Module="AllStudentTertiary" Action="List"  HttpMethod="Get" UrlTemplate="{0}/General/GetAllStudentTertiary" Description=""  />
+  <RequestMapping Module="AllStudentWork" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentWork" Description=""  />
+  <RequestMapping Module="AllStudentNotes" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentNotes" Description=""  />
+  <RequestMapping Module="AppForms" Action="Get" HttpMethod="Get"  UrlTemplate="{0}/General/GetAppFormCentres" Description=""  />
+  <RequestMapping Module="AppForms" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllAppForms" Description=""  />
+  <RequestMapping Module="AllStudentSubjects" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentSubjects" Description=""  />
+  <RequestMapping Module="AllStudentApprovals" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentApprovals" Description=""  />
+  <RequestMapping Module="AllStudentProgrammes" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentProgrammes" Description=""  />
+  <RequestMapping Module="AllStudentApplications" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentApplications" Description=""  />
+  <RequestMapping Module="AllStudentModules" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentModules" Description=""  />
+  <RequestMapping Module="AllStudentModulesDetails" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentModulesDetails" Description=""  />
+  <RequestMapping Module="AllQuotes" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllQuotes" Description=""  />
+  <RequestMapping Module="AllQuoteDetails" Action="Get" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllQuoteDetails?intQuoteNum={intQuoteNum}" Description=""  />
+  <RequestMapping Module="InvoiceInfoOnQuoteHeader" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/General/SetInvoiceInfoOnQuoteHeader?quoteId={quoteId}&amp;invoiceKey={invoiceKey}&amp;invoiceNum={invoiceNum}" Description=""  />
+  <RequestMapping Module="PickingLists" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetPickingLists" Description=""  />
+  <RequestMapping Module="StudentStockDispatched" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetStudentStockDispatched" Description=""  />
+  <RequestMapping Module="AllAssignmentReceived" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllAssignmentReceived" Description=""  />
+  <RequestMapping Module="AllBatchNumbers" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllBatchNumbers" Description=""  />
+  <RequestMapping Module="AllStudentSubjectExams" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentSubjectExams" Description=""  />
+  <RequestMapping Module="AllStudentCourseExams" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetAllStudentCourseExams" Description=""  />
+  <RequestMapping Module="StudentAssignmentDueDate" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetStudentAssignmentDueDate" Description=""  />
+  <RequestMapping Module="StudentExaminationDate" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetStudentExaminationDate" Description=""  />
+  <RequestMapping Module="StudentAssignmentSubmission" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetStudentAssignmentSubmission" Description=""  />
+  <RequestMapping Module="SchoolBankingDetails" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetSchoolBankingDetails" Description=""  />
+  <RequestMapping Module="ListFields" Action="Get" HttpMethod="Get"  UrlTemplate="{0}/General/GetListFields?methodName={methodName}" Description=""  />
+  <RequestMapping Module="GeneralMethods" Action="List" HttpMethod="Get"  UrlTemplate="{0}/General/GetMethods" Description="" />
+
+  <!--Registration-->
+  <RequestMapping Module="AcademicPeriodsForStudent" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Registration/GetAcademicPeriodsForStudent?idNumber={idNumber}" Description=""  />
+  <RequestMapping Module="UpdateStudent" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/AddUpdateStudent?doAudit={doAudit}" Description=""  />
+  <RequestMapping Module="UpdateRelative" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/AddUpdateRelative?studentNumber={studentNumber}&amp;accountHolder={accountHolder}&amp;doAudit={doAudit}" Description=""  />
+  <RequestMapping Module="UpdateStudentMediaAccess" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/AddUpdateStudentMediaAccess?studentNumber={studentNumber}" Description=""  />
+  <RequestMapping Module="UpdateStudentReferral" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/AddUpdateStudentReferral?studentNumber={studentNumber}" Description=""  />
+  <RequestMapping Module="UpdateEduLoanForm" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/Registration/AddUpdateEduLoanForm" Description="" />
+  <RequestMapping Module="UpdateStudentScholasticInformation" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/UpdateStudentScholasticInformation" Description="" />
+  <RequestMapping Module="UpdateStudentSecondary" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/AddUpdateStudentSecondary" Description="" />
+  <RequestMapping Module="UpdateStudentTertiary" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/AddUpdateStudentTertiary" Description="" />
+  <RequestMapping Module="UpdateStudentWorkExperience" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/AddUpdateStudentWorkExperience" Description="" />
+  <RequestMapping Module="PreRegisterStudent" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/Registration/PreRegisterStudent" Description="" />
+  <RequestMapping Module="FinaliseStudentRegistration" Action="Update" HttpMethod="Put"  UrlTemplate="{0}/Registration/FinaliseStudentRegistration?intAppForm={intAppForm}" Description="" />
+  <RequestMapping Module="ModulerRegCost" Action="Create"  HttpMethod="Post" UrlTemplate="{0}/Registration/GetModulerRegCost?courseCode={courseCode}&amp;academicPeriod={academicPeriod}&amp;PaymentMethod={PaymentMethod}&amp;dtmDateTime={dtmDateTime}" Description="" />
+  <RequestMapping Module="RegistrationMethods" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Registration/GetMethods" Description="" />
+
+  <!--Lookups-->
+  <RequestMapping Module="AllProgrammes" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllProgrammes" Description=""  />
+  <RequestMapping Module="AllProgrammesOnSchoolAndBlock" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllProgrammesOnSchoolAndBlock?school={school}&amp;academicPeriod={academicPeriod}" Description=""  />
+  <RequestMapping Module="AllProgrammesOnBlock" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllProgrammesOnBlock?academicPeriod={academicPeriod}" Description=""  />
+  <RequestMapping Module="AllCentres" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllCentres" Description=""  />
+  <RequestMapping Module="AllAcademicPeriods" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllAcademicPeriods" Description=""  />
+  <RequestMapping Module="AllCompany" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllCompany" Description=""  />
+  <RequestMapping Module="AllBanks" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllBanks" Description=""  />
+  <RequestMapping Module="AllEduLoanBanks" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllEduLoanBanks" Description=""  />
+  <RequestMapping Module="AllEmployers" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllEmployers" Description=""  />
+  <RequestMapping Module="AllEduLoanEmployers" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllEduLoanEmployers" Description=""  />
+  <RequestMapping Module="AllSchools" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllSchools" Description=""  />
+  <RequestMapping Module="AllAreaOfStudy" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllAreaOfStudy" Description=""  />
+  <RequestMapping Module="AllModules" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllModules" Description=""  />
+  <RequestMapping Module="AllModulesOnCourse" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllModulesOnCourse?courseCode={courseCode}&amp;academicPeriod={academicPeriod}" Description=""  />
+  <RequestMapping Module="AllModulesOnCourseBlock" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllModulesOnCourseBlock?courseCode={courseCode}&amp;academicPeriod={academicPeriod}" Description=""  />
+  <RequestMapping Module="AllModulesOnCourseBlockStudent" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllModulesOnCourseBlockStudent?courseCode={courseCode}&amp;academicPeriod={academicPeriod}&amp;lngStudentNum={lngStudentNum}" Description=""  />
+  <RequestMapping Module="AllModulesOnSchoolAndBlock" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllModulesOnSchoolAndBlock?school={school}&amp;academicPeriod={academicPeriod}" Description=""  />
+  <RequestMapping Module="AllPaymentMethods" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllPaymentMethods" Description=""  />
+  <RequestMapping Module="AllTitles" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllTitles" Description=""  />
+  <RequestMapping Module="AllRelationships" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllRelationships" Description=""  />
+  <RequestMapping Module="AllRegions" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllRegions" Description=""  />
+  <RequestMapping Module="AllPrefLanguages" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllPrefLanguages" Description=""  />
+  <RequestMapping Module="AllHomeLanguage" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllHomeLanguage" Description=""  />
+  <RequestMapping Module="AllEthnicGroups" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllEthnicGroups" Description=""  />
+  <RequestMapping Module="AllEduLoanEthnicGroups" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllEduLoanEthnicGroups" Description=""  />
+  <RequestMapping Module="AllMaritalStatus" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllMaritalStatus" Description=""  />
+  <RequestMapping Module="AllEduLoanMaritalStatus" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllEduLoanMaritalStatus" Description=""  />
+  <RequestMapping Module="AllDisability" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllDisability" Description=""  />
+  <RequestMapping Module="AllTertiary" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllTertiary" Description=""  />
+  <RequestMapping Module="AllDegree" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllDegree" Description=""  />
+  <RequestMapping Module="AllPosition" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllPosition" Description=""  />
+  <RequestMapping Module="MediaAccessPerStudent" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetMediaAccessPerStudent?lngStudentNum={lngStudentNum}" Description=""  />
+  <RequestMapping Module="ALLMediaAccess" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetALLMediaAccess" Description=""  />
+  <RequestMapping Module="StudentReferral" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetStudentReferral?lngStudentNum={lngStudentNum}" Description=""  />
+  <RequestMapping Module="AllReferral" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAllReferral" Description=""  />
+  <RequestMapping Module="AllMatricStatus" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllMatricStatus" Description=""  />
+  <RequestMapping Module="AllMatricGrade" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllMatricGrade" Description=""  />
+  <RequestMapping Module="AllHighSchoolGrade" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllHighSchoolGrade" Description=""  />
+  <RequestMapping Module="StudentSecondary" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetStudentSecondary?lngStudentNum={lngStudentNum}" Description=""  />
+  <RequestMapping Module="StudentWork" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetStudentWork?lngStudentNum={lngStudentNum}" Description=""  />
+  <RequestMapping Module="AllMeetingCentres" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllMeetingCentres" Description=""  />
+  <RequestMapping Module="AllExamCentres" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllExamCentres" Description=""  />
+  <RequestMapping Module="AllSecondarySubjects" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllSecondarySubjects" Description=""  />
+  <RequestMapping Module="AllMatricSymbol" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllMatricSymbol" Description=""  />
+  <RequestMapping Module="FullRegQuotation" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetFullRegQuotation?courseCode={courseCode}&amp;academicPeriod={courseCode}&amp;paymentMethod={paymentMethod}&amp;dtmDate={dtmDate}" Description=""  />
+  <RequestMapping Module="AllMajorOnCourseAndBlock" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllMajorOnCourseAndBlock?coursecode={coursecode}&amp;academicPeriod={academicPeriod}" Description=""  />
+  <RequestMapping Module="AllCourseMajorSubjectOnCourseMajor" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/AllCourseMajorSubjectOnCourseMajor?courseMajor={courseMajor}" Description=""  />
+  <RequestMapping Module="AcademicHistory" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAcademicHistory?studentNumber={studentNumber}&amp;examPeriod={examPeriod}&amp;courseCode={courseCode}" Description=""  />
+  <RequestMapping Module="AcademicProfile" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAcademicProfile?studentNumber={studentNumber}&amp;academicPeriod={academicPeriod}&amp;courseCode={courseCode}" Description=""  />
+  <RequestMapping Module="ExamTimetable" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetExamTimetable?studentNumber={studentNumber}&amp;courseCode={courseCode}" Description=""  />
+  <RequestMapping Module="AssignmentResult" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAssignmentResult?studentNumber={studentNumber}" Description=""  />
+  <RequestMapping Module="AssignmentResultSubject" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAssignmentResultSubject?studentNumber={studentNumber}&amp;courseCode={courseCode}" Description=""  />
+  <RequestMapping Module="AssignmentResultSubjectDetail" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAssignmentResultSubjectDetail?studentNumber={studentNumber}&amp;courseCode={courseCode}&amp;subjectNumber={subjectNumber}" Description=""  />
+  <RequestMapping Module="AssignmentResultDetail" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAssignmentResultDetail?subjectNumber={subjectNumber}&amp;assignmentNumber={assignmentNumber}" Description=""  />
+  <RequestMapping Module="ExamResult" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetExamResult?studentNumber={studentNumber}" Description=""  />
+  <RequestMapping Module="ExamResultSubject" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetExamResultSubject?studentNumber={studentNumber}&amp;courseCode={courseCode}" Description=""  />
+  <RequestMapping Module="ExamResultSubjectDetail" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetExamResultSubjectDetail?studentNumber={studentNumber}&amp;courseCode={courseCode}&amp;subjectNumber={subjectNumber}" Description=""  />
+  <RequestMapping Module="ExamResultDetail" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetExamResultDetail?studentNumber={studentNumber}&amp;studentExamNumber={studentExamNumber}&amp;subjectPeriodWeightExmNumber={subjectPeriodWeightExmNumber}" Description=""  />
+  <RequestMapping Module="StudentCentresByCourse" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetStudentCentresByCourse?studentNumber={studentNumber}&amp;courseCode={courseCode}" Description=""  />
+  <RequestMapping Module="StudentCentresBySubject" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetStudentCentresBySubject?studentNumber={studentNumber}&amp;subjectCode={subjectCode}" Description=""  />
+  <RequestMapping Module="AssessmentMarkSubject" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAssessmentMarkSubject?studentNumber={studentNumber}&amp;subjectCode={subjectCode}" Description=""  />
+  <RequestMapping Module="AssessmentMarkSubjectDetail" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetAssessmentMarkSubjectDetail?studentNumber={studentNumber}&amp;subjectCode={subjectCode}&amp;subjectNumber={subjectNumber}" Description=""  />
+  <RequestMapping Module="CourseQualificationRequisite" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetCourseQualificationRequisite?academicPeriod={academicPeriod}" Description=""  />
+  <RequestMapping Module="CourseQualificationException" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetCourseQualificationException" Description=""  />
+  <RequestMapping Module="ApplicationTracking" Action="Get"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetApplicationTracking?appFormNo={appFormNo}" Description=""  />
+  <RequestMapping Module="LookupGetMethods" Action="List"  HttpMethod="Get" UrlTemplate="{0}/Lookups/GetMethods" Description="" />
+
+  <!--Assessments-->
+  <RequestMapping Module="AssessmentResult" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/Assessments/UploadAssessmentResult" Description=""  />
+  <RequestMapping Module="AssessmentResultMethods" Action="List" HttpMethod="Get"  UrlTemplate="{0}/Assessments/GetMethods" Description="" />
+
+  <!--OrderStock-->
+  <RequestMapping Module="AllPickingLists" Action="List" HttpMethod="Get"  UrlTemplate="{0}/OrderStock/GetAllPickingLists" Description=""  />
+  <RequestMapping Module="PickingListStock" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/OrderStock/GetPickingListStock" Description=""  />
+  <RequestMapping Module="UpdatePickingListStatus" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/OrderStock/UpdatePickingListStatus" Description=""  />
+  <RequestMapping Module="UpdatePickingListStockItem" Action="Create" HttpMethod="Post"  UrlTemplate="{0}/OrderStock/UpdatePickingListStockItem" Description=""  />
+ 
+  <!--Values-->
+  <RequestMapping Module="ValuesGet" Action="List" HttpMethod="Get" UrlTemplate="{0}/Values/Get" Description=""  />
+  <RequestMapping Module="ValuesGet" Action="Get" HttpMethod="Get" UrlTemplate="{0}/Values/Get/{1}" Description="" />
+  <RequestMapping Module="ValuesPost" Action="Create" HttpMethod="Post" UrlTemplate="{0}/Values/Post" Description="" />
+  <RequestMapping Module="ValuesPost" Action="Update" HttpMethod="Put" UrlTemplate="{0}/Values/Put/{1}" Description="" />
+  <RequestMapping Module="ValuesDelete" Action="Delete" HttpMethod="Delete" UrlTemplate="{0}/Values/Delete/{1}" Description="" />
+
+  <!--OLGBaseApi-->
+  <RequestMapping Module="OLGBaseApi" Action="List" HttpMethod="Get" UrlTemplate="{0}/OLGBaseApi/GetMethods" Description="" />
+
+</RequestMappings>

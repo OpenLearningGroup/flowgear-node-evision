@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Evision", "Evision.csproj", "{77E34B84-C79D-4EDB-8A01-3C736C17D836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHarness", "..\TestHarness\TestHarness.csproj", "{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77E34B84-C79D-4EDB-8A01-3C736C17D836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E34B84-C79D-4EDB-8A01-3C736C17D836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E34B84-C79D-4EDB-8A01-3C736C17D836}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{77E34B84-C79D-4EDB-8A01-3C736C17D836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E34B84-C79D-4EDB-8A01-3C736C17D836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E34B84-C79D-4EDB-8A01-3C736C17D836}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Debug|x86.ActiveCfg = Debug|x86
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Debug|x86.Build.0 = Debug|x86
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Release|x86.ActiveCfg = Release|x86
+		{BD1E823E-9014-4235-AF18-0F6BD54FFA1A}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
